@@ -1,0 +1,146 @@
+/* General form styling */
+form {
+    max-width: 700px; /* Reduced max-width */
+    margin: 0 auto;
+    padding: 15px; /* Reduced padding */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 22px; /* Reduced font size */
+    color: #333;
+    margin-bottom: 15px; /* Reduced margin */
+    text-align: center;
+}
+
+/* Form group styles */
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px; /* Reduced margin */
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #333;
+    font-size: 14px; /* Reduced font size */
+    width: 220px; /* Reduced width */
+    text-align: left;
+}
+
+/* Input fields styling */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: calc(100% - 240px); /* Adjusted input width */
+    padding: 8px; /* Reduced padding */
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px; /* Adjusted font size */
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 90px; /* Reduced textarea height */
+}
+
+/* Button styles */
+button {
+    background-color: #007acc;
+    color: white;
+    padding: 10px 18px; /* Reduced padding */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    font-size: 14px; /* Reduced font size */
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 12px; /* Reduced font size */
+    margin-bottom: 12px; /* Reduced margin */
+}
+
+/* Amenities styling */
+.amenities-group {
+    display: flex;
+    flex-wrap: wrap; /* Allow checkboxes to wrap onto new lines */
+    gap: 15px; /* Reduced space between checkboxes */
+    margin-top: 10px;
+}
+
+.amenities-group label {
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+.amenities-group input[type="checkbox"] {
+    margin-right: 6px; /* Reduced space between checkbox and label */
+    width: 18px; /* Reduced checkbox size */
+    height: 18px;
+}
+
+/* Custom styles for the amenities checkboxes */
+.amenities-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Reduced gap */
+    font-size: 14px;
+    color: #333;
+}
+
+/* Styling for individual checkbox containers */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 4px; /* Reduced gap */
+}
+
+/* Input Focus Styling */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #007acc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 122, 204, 0.5);
+}
+
+/* Centering and styling the submit button */
+button[type="submit"] {
+    background-color: #007acc;
+    color: white;
+    padding: 10px 18px; /* Reduced padding */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    margin-top: 15px; /* Reduced margin */
+    font-size: 14px; /* Reduced font size */
+}
+
+button[type="submit"]:hover {
+    background-color: #005bb5;
+}
+
+button[type="submit"]:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}

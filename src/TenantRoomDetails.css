@@ -1,0 +1,126 @@
+/* TenantRoomDetails.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #f2f2f2, #e0eafc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #333;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #4CAF50;
+    margin: 8px auto 0;
+    border-radius: 5px;
+}
+
+h3 {
+    color: #4CAF50;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.error-message {
+    color: #e74c3c;
+    text-align: center;
+    font-weight: bold;
+    background-color: #fdecea;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+strong {
+    color: #333;
+    font-weight: 600;
+}
+
+.amenities-container {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f4fdf4;
+    border-radius: 8px;
+}
+
+.amenities-container div {
+    display: inline-block;
+    background-color: #e6f7e6;
+    color: #4CAF50;
+    padding: 6px 12px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    transition: transform 0.3s ease;
+}
+
+.amenities-container div:hover {
+    background-color: #4CAF50;
+    color: white;
+    transform: scale(1.05);
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+    color: #fff;
+    background: linear-gradient(to right, #4CAF50, #388e3c);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: linear-gradient(to right, #388e3c, #4CAF50);
+    transform: translateY(-2px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}

@@ -1,0 +1,48 @@
+/* RenterLogin.css */
+.renter-login {
+    max-width: 400px; /* Maximum width of the form */
+    margin: 20px auto; /* Center the form */
+    padding: 20px; /* Padding inside the form */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #fff; /* White background */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h2 {
+    text-align: center; /* Center the heading */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+}
+
+input {
+    margin-bottom: 15px; /* Space between inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+button {
+    padding: 10px; /* Padding inside the button */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.register-link {
+    color: #007bff; /* Blue text color */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.register-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}

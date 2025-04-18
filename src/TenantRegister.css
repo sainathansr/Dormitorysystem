@@ -1,0 +1,42 @@
+.tenant-register-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tenant-register-container h2 {
+    text-align: center;
+}
+
+.tenant-register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.tenant-register-form input, 
+.tenant-register-form select {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.tenant-register-form button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tenant-register-form button:hover {
+    background-color: #218838;
+}
+
+.tenant-register-container p {
+    text-align: center;
+}

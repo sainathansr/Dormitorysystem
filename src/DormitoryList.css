@@ -1,0 +1,95 @@
+/* DormitoryList.css */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #008080;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 128, 128, 0.2);
+}
+
+li h3 {
+    font-size: 1.8em;
+    color: #00796b;
+    margin: 0;
+}
+
+li p {
+    font-size: 1.1em;
+    color: #555;
+    margin: 5px 0;
+}
+
+.no-dormitories {
+    font-size: 1.2em;
+    color: #ff4d4d;
+    text-align: center;
+}
+
+.error-message {
+    color: #ff4d4d;
+    font-size: 1.2em;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.loading {
+    font-size: 1.5em;
+    color: #008080;
+    text-align: center;
+    margin: 30px 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    li {
+        padding: 12px;
+    }
+
+    li h3 {
+        font-size: 1.5em;
+    }
+
+    li p {
+        font-size: 1em;
+    }
+}

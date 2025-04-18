@@ -1,0 +1,161 @@
+/* TenantRoomDisplay.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #f0f4f8, #e6fcf5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    width: 95%;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+    animation: fadeInUp 0.6s ease-out;
+    transition: all 0.3s ease;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 25px;
+    color: #333;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #008080;
+    margin: 12px auto 0;
+    border-radius: 5px;
+}
+
+.error-message {
+    color: #e74c3c;
+    text-align: center;
+    font-weight: bold;
+    background-color: #fdecea;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.no-rooms {
+    text-align: center;
+    color: #777;
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+li {
+    background: linear-gradient(135deg, #e0f7fa, #e0f2f1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 128, 128, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 128, 128, 0.2);
+    background: linear-gradient(135deg, #b2dfdb, #80cbc4);
+}
+
+li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 100%;
+    background: #008080;
+    border-radius: 0 5px 5px 0;
+}
+
+h3 {
+    font-size: 1.6em;
+    color: #008080;
+    margin: 0 0 10px;
+}
+
+p {
+    font-size: 1.1em;
+    color: #444;
+    margin: 4px 0;
+    line-height: 1.4;
+}
+
+p span {
+    font-weight: bold;
+    color: #00796b;
+}
+
+button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #008080;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #00796b;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    h2 {
+        font-size: 1.6em;
+    }
+    h3 {
+        font-size: 1.3em;
+    }
+    p {
+        font-size: 1em;
+    }
+}
